@@ -1,0 +1,62 @@
+:root {
+  --purple-color: #433686;
+  --dark-purple-color: #240842;
+  --white-color: #ececec;
+  --orange-color: #fec066;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--purple-color);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-purple-color);
+  color: var(--white-color);
+}
+
+nav img {
+  margin-left: 3%;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 3%;
+}
+
+nav ul li {
+  padding-right: 3%;
+  list-style: none;
+}
+
+.hero {
+  color: var(--white-color);
+  text-align: center;
+}
+
+.hero-image {
+  margin-top: 2%;
+}
+.hero-image img {
+  width: 22%;
+  margin: auto;
+}
+
+.hero-title {
+  margin-top: -2%;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.hero-title--color {
+  color: var(--orange-color);
+}
+
+.hero-title h1 {
+  text-shadow: 1px 0px 3px var(--dark-purple-color);
+}
