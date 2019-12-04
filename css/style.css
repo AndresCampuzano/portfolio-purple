@@ -46,6 +46,23 @@ nav a {
   color: var(--white-color);
 }
 
+.burger-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  position: fixed;
+  z-index: 2;
+  right: 15px;
+  top: 13px;
+  color: white;
+}
+
+
 .hero {
   color: var(--white-color);
   text-align: center;
@@ -225,6 +242,29 @@ footer p {
 
 @media screen and (max-width: 400px) {
   
+  .burger-button{ /*Arriba el display está como none */
+    display: block;   
+}
+  .menu{
+    position: fixed;
+    background-color: rgba(2, 111, 255, .7);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    /* height: 100vh; */
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+  .menu.is-active{
+    left: 0;
+}
+
+
   .card {
     min-width: 300px;
   }

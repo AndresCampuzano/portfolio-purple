@@ -13,9 +13,13 @@
   </head>
 
   <body>
+
+      <i class="icon-menu burger-button" id="burger-menu"></i>
+
+
     <nav>
       <h2>Portfolio AC</h2>
-      <ul>
+      <ul class="menu">
         <li>
           <a href="#portfolio">Portfolio</a>
         </li>
@@ -166,5 +170,42 @@
     <footer>
       <p>Andrés Campuzano, All rights reserved. Portfolio</p>
     </footer>
+
+    <script>
+
+        /* Explicación: https://platzi.com/clases/1362-responsive-design/13554-anadiendo-javascript-para-deteccion-de-eventos/ */
+        // console.log('Hola mundo, primera linea en JS');
+        // console.log(window.matchMedia('screen and (max-width: 767px)'));
+    
+        const ipad = window.matchMedia('screen and (max-width: 400px)');
+        const menu = document.querySelector('.menu');
+        // console.log(menu);
+        const burgerButtton = document.querySelector('#burger-menu');
+        // console.log(burgerButtton);
+    
+    
+        ipad.addListener(validation);
+    
+        function validation(event) {
+          if (event.matches) {
+            burgerButtton.addEventListener('click', hideShow);
+          } else {
+            burgerButtton.removeEventListener('click', hideShow);
+          }
+        }
+    
+        validation(ipad);
+    
+        function hideShow() {
+          if (menu.classList.contains('is-active')) {
+            menu.classList.remove('is-active');
+          } else {
+            menu.classList.add('is-active');
+          }
+        }
+    
+      </script>
+
+
   </body>
 </html>
