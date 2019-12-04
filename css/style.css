@@ -22,6 +22,7 @@ nav {
 
 nav img {
   margin-left: 3%;
+  width: 8%;
 }
 
 nav ul {
@@ -59,4 +60,40 @@ nav ul li {
 
 .hero-title h1 {
   text-shadow: 1px 0px 3px var(--dark-purple-color);
+}
+
+.experience-title {
+  margin-top: 5%;
+  margin-left: 5%;
+  text-transform: uppercase;
+  color: var(--orange-color);
+  text-shadow: 1px 0px 3px var(--dark-purple-color);
+}
+
+.experience {
+  width: 100%;
+}
+
+.experience-cards {
+  margin: 7%;
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  
+}
+
+.card {
+  margin: 1%;
+  padding: 3%;
+  border: 1px solid red;
+  border-radius: 18px;
+  width: 33%;
+}
+
+/* Here image */
+
+
+.card-content--front {
+  border: 1px solid red;
+
 }
