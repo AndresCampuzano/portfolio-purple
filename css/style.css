@@ -46,6 +46,8 @@ nav a {
   color: var(--white-color);
 }
 
+  /* Hamburger button */
+
 .burger-button{
   width: 40px;
   height: 40px;
@@ -61,6 +63,9 @@ nav a {
   top: 13px;
   color: white;
 }
+
+  /* Hamburger button */
+
 
 
 .hero {
@@ -242,19 +247,22 @@ footer p {
 
 @media screen and (max-width: 400px) {
   
+
+  /* Hamburger button */
   .burger-button{ /*Arriba el display está como none */
     display: block;   
 }
   .menu{
     position: fixed;
-    background-color: rgba(2, 111, 255, .7);
+    background-color: rgba(37, 1, 71, 0.781);
     z-index: 3;
     top: 0;
-    left: -100vw;
+    left: -120vw;
     width: 100vw;
-    /* height: 100vh; */
+    height: 100vh;
     bottom: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: .3s;
@@ -262,7 +270,9 @@ footer p {
 
   .menu.is-active{
     left: 0;
+    padding: 0;
 }
+  /* Hamburger button */
 
 
   .card {
