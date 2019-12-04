@@ -222,3 +222,11 @@ footer p {
   padding: 2%;
   color: var(--white-color);
 }
+
+@media screen and (max-width: 400px) {
+  
+  .card {
+    min-width: 300px;
+  }
+
+}
