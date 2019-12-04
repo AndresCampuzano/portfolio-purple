@@ -14,15 +14,21 @@
 
   <body>
     <nav>
-      <img src="images/logo.png" alt="Andres Campuzano portfolio logo" />
+      <h2>Portfolio AC</h2>
       <ul>
-        <li href="#">Portfolio</li>
-        <li href="#">Experience</li>
-        <li href="#">Let's work together</li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#together">Let's work together</a>
+        </li>
       </ul>
     </nav>
 
-    <div class="hero">
+    <div class="hero" id="portfolio">
       <div class="hero-image">
         <img src="images/computer.svg" alt="Hero image portfolio" />
       </div>
@@ -38,7 +44,7 @@
       <h2>About my experience</h2>
     </div>
 
-    <div class="experience">
+    <div class="experience" id="experience">
       <div class="experience-cards">
         <div class="card">
           <div class="card-image">
@@ -127,26 +133,38 @@
       </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="together">
       <div class="contact-title">
-        <h2>Let's create something together</h2>
+        <h2>Let's create something together!</h2>
       </div>
       <div class="contact-input">
         <form action="">
-          <input type="text" placeholder="e-mail" />
-          <input type="submit" value="Send" />
+          <input
+            type="email"
+            placeholder="your mail here"
+            class="contact-input--email"
+          />
+          <input type="submit" value="Send" class="contact-input--button" />
         </form>
       </div>
       <div class="contact-social">
-        <div class="contact-social--item">XXX</div>
-        <div class="contact-social--item">XXX</div>
-        <div class="contact-social--item">XXX</div>
-        <div class="contact-social--item">XXX</div>
+        <div class="contact-social--item">
+          <img src="icons/icons8-github.svg" alt="" />
+        </div>
+        <div class="contact-social--item">
+          <img src="icons/icons8-instagram.svg" alt="" />
+        </div>
+        <div class="contact-social--item">
+          <img src="icons/icons8-facebook.svg" alt="" />
+        </div>
+        <div class="contact-social--item">
+          <img src="icons/icons8-twitter.svg" alt="" />
+        </div>
       </div>
     </div>
 
     <footer>
-      <p>Andrés Campuzano, All rights reserved</p>
+      <p>Andrés Campuzano, All rights reserved. Portfolio</p>
     </footer>
   </body>
 </html>
