@@ -1,6 +1,7 @@
 :root {
   --purple-color: #433686;
   --dark-purple-color: #240842;
+  --more-dark-purple-color: #1c0633;
   --white-color: #ececec;
   --orange-color: #fec066;
 }
@@ -75,7 +76,6 @@ nav ul li {
 }
 
 .experience-cards {
-  margin: 7%;
   width: 100%;
   display: flex;
   flex-flow: wrap;
@@ -89,7 +89,9 @@ nav ul li {
   border-radius: 18px;
   width: 33%;
   background-color: white;
-  padding: 0;
+  padding: 0 0 1% 0;
+  min-width: 400px;
+  box-shadow: 0px 16px 66px -20px rgba(0,0,0,1);
 }
 
 .card-image img{
@@ -98,9 +100,6 @@ nav ul li {
   border-top-right-radius: 18px;
   box-shadow: 0px 52px 49px -38px rgba(0,0,0,1);
 }
-
-/* Here image */
-
 
 .card-content--front {
   position: relative;
@@ -113,4 +112,35 @@ nav ul li {
 
 .card-content--front p {
   text-align: left;
+}
+
+.card-button a {
+  border: 1px solid var(--purple-color);
+  color: var(--purple-color);
+  border-radius: 8px;
+  padding: 3%;
+  text-decoration: none;
+}
+
+.card-button a:hover {
+  background-color: #43368631;
+}
+
+.contact {
+  margin-top: 3%;
+  width: 100%;
+  text-align: center;
+  background-color: var(--dark-purple-color);
+}
+
+.contact-title {
+  padding-top: 1%;
+  text-transform: uppercase;
+  color: var(--orange-color);
+  text-shadow: 1px 0px 3px var(--dark-purple-color);
+}
+
+footer {
+  background-color:var(--more-dark-purple-color);
+  height: auto;
 }
